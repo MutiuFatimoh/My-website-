@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Mutiu Fatimoh | Portfolio</title>
+
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            color: white;
+            background-image: url("https://images.unsplash.com/photo-1518770660439-4636190af475");
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+        }
+
+        .overlay {
+            background: rgba(0,0,0,0.75);
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        /* TOP NAV */
+        .nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px;
+            background: rgba(0,0,0,0.6);
+            border-radius: 10px;
+            position: sticky;
+            top: 0;
+        }
+
+        .nav button {
+            margin: 5px;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            background: white;
+            color: black;
+            font-weight: bold;
+        }
+
+        .header {
+            text-align: center;
+            padding: 60px 10px 20px;
+        }
+
+        .header h1 {
+            font-size: 45px;
+            margin-bottom: 10px;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: auto;
+        }
+
+        .box {
+            background: rgba(255,255,255,0.1);
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 10px;
+        }
+
+        h2 {
+            border-bottom: 1px solid white;
+            padding-bottom: 5px;
+        }
+
+        .btn {
+            display: inline-block;
+            margin-top: 10px;
+            padding: 10px 15px;
+            background: white;
+            color: black;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="overlay">
+
+    <!-- NAV BUTTONS -->
+    <div class="nav">
+        <div><b>Mutiu Portfolio</b></div>
+        <div>
+            <button onclick="document.getElementById('about').scrollIntoView()">About</button>
+            <button onclick="document.getElementById('career').scrollIntoView()">Career</button>
+            <button onclick="document.getElementById('hobbies').scrollIntoView()">Hobbies</button>
+            <button onclick="document.getElementById('contact').scrollIntoView()">Contact</button>
+        </div>
+    </div>
+
+    <!-- HEADER -->
+    <div class="header">
+        <h1>Mutiu Fatimoh</h1>
+        <p>Student Counsellor | University of Ilorin</p>
+    </div>
+
+    <div class="container">
+
+        <!-- ABOUT -->
+        <div class="box" id="about">
+            <h2>About Me</h2>
+            <p>
+                My name is Mutiu Fatimoh. I am a student of the University of Ilorin,
+                Faculty of Education, Department of Educational Guidance and Counselling.
+                I am a dedicated student counsellor who provides solutions to various concerns.
+                I am passionate about helping clients navigate and overcome their challenges.
+            </p>
+            <a class="btn" href="#contact">Contact Me</a>
+        </div>
+
+        <!-- CAREER -->
+        <div class="box" id="career">
+            <h2>Career</h2>
+            <p>
+                I am currently building my career in Guidance and Counselling,
+                focusing on helping students achieve emotional balance, academic success,
+                and personal development.
+            </p>
+        </div>
+
+        <!-- HOBBIES -->
+        <div class="box" id="hobbies">
+            <h2>Hobbies</h2>
+            <p>
+                • Reading motivational books<br>
+                • Counselling and listening to people<br>
+                • Researching human behavior<br>
+                • Learning new skills in technology
+            </p>
+        </div>
+
+        <!-- CONTACT -->
+        <div class="box" id="contact">
+            <h2>Contact</h2>
+            <p><b>Email:</b> mutuifatimoh@example.com</p>
+            <p><b>Phone:</b> +2348165150953</p>
+
+            <a class="btn" href="mailto:mutiufatimoh02@gmail.com">Send Email</a>
+        </div>
+
+    </div>
+</div>
+
+</body>
+  </html>
